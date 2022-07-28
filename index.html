@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Varsa</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 
 <body>
@@ -36,6 +37,74 @@
         <!-- navbar end -->
 
         <!-- top banner slider started  -->
+
+        <div id="default-carousel" class="relative" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="overflow-hidden relative h-56 rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                    data-carousel-item="">
+                    <span
+                        class="absolute top-1/2 left-1/2 text-2xl font-semibold text-black -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
+                        Slide</span>
+                    <img src="images/cover/cover-1.png"
+                        class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+                        alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
+                    data-carousel-item="">
+                    <img src="images/cover/cover-2.jpg"
+                        class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+                        alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+                    data-carousel-item="">
+                    <img src="images/cover/cover-3.jpg"
+                        class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+                        alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true"
+                    aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button"
+                    class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                    aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button"
+                    class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                    aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                data-carousel-prev="">
+                <span
+                    class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                data-carousel-next="">
+                <span
+                    class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
 
         <!-- top banner end -->
 
@@ -121,8 +190,8 @@
     <section class="container mx-auto px-4">
         <div class="flex items-center">
             <img src="images/working.png" alt="">
-            <div class="px-5 mx-auto">
-                <h1 class="text-3xl font-bold">Explore your journey with our institution</h1>
+            <div class="px-12 mx-12">
+                <h1 class="text-5xl font-bold">Explore your journey with our institution</h1>
                 <p>“To The Stars Through Science” — it's both our motto and our mantra, and it means that here, we we
                     strive for greatness through scientific research, scholarly inquiry, in-depth study and relentless
                     determination. Want to move beyond the status quo in order to discover something new or create
@@ -191,6 +260,147 @@
                 All
             </button></div>
     </section>
+    <!-- students feedback  -->
+    <!-- FAQ section  -->
+    <section class="container mx-auto px-4">
+        <div class="text-center mx-20 px-20">
+            <h1 class="text-5xl font-bold tracking-wider">Frequently Asked Question</h1>
+            <p class="font-light"> A frequently asked questions (FAQ) list is often used in articles, websites, email
+                lists, and online
+                forums where common questions tend to recur, for example through posts or queries by new users related
+                to common knowledge gaps. The purpose of a FAQ is generally to provide information on frequent questions
+                or concerns.</p>
+        </div>
+
+
+        <div id="accordion-color" data-accordion="collapse"
+            data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+            <h2 id="accordion-color-heading-1">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 hover:bg-blue-100 dark:hover:bg-gray-800 bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+                    data-accordion-target="#accordion-color-body-1" aria-expanded="true"
+                    aria-controls="accordion-color-body-1">
+                    <span>What is the difference between flex box and css grid?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-1" class="" aria-labelledby="accordion-color-heading-1">
+                <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Flexbox was created for layout in one dimension,
+                        which can be either a row or a column, as opposed to CSS Grid Layout, which was developed for
+                        layout in two dimensions.
+                    </p>
+                    <p class="text-gray-500 dark:text-gray-400">Grid was intended for simultaneous rows and columns in a
+                        two-dimensional arrangement. However, the two specifications have significant commonalities that
+                        should make it easier for you to understand Grid if you have experience with flexbox.</p>
+                </div>
+            </div>
+            <h2 id="accordion-color-heading-2">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                    data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                    aria-controls="accordion-color-body-2">
+                    <span>What is the difference between bootstrap and tailwind CSS?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">A collection of responsive, mobile-first components
+                        with a specific UI kit are included with Bootstrap. A clean UI with more flexibility and
+                        individuality is produced using a collection of utility classes in Tailwind CSS.</p>
+                    <p class="text-gray-500 dark:text-gray-400">Sites made with Bootstrap adhere to a standardized
+                        pattern that gives them all the same appearance.</p>
+                </div>
+            </div>
+            <h2 id="accordion-color-heading-3">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                    data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                    aria-controls="accordion-color-body-3">
+                    <span>What is CSS box model?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Each element in a page is displayed by the
+                        rendering engine of the browser as a rectangular box in accordance with the fundamental box
+                        model of CSS. These boxes' dimensions, locations, and other attributes are set by CSS.</p>
+
+                </div>
+            </div>
+            <h2 id="accordion-color-heading-4">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                    data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+                    aria-controls="accordion-color-body-4">
+                    <span>What is symantic tag?</span>
+                    <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Semantics in programming is the study of what a
+                        piece of code means, such as "what effect does running that line of JavaScript have?" or "what
+                        function or role does that HTML element have." Consider styling a list in CSS with li components
+                        that represent various fruit varieties. For instance, the h1> element in HTML is a semantic
+                        element that designates the text it surrounds as "a top level heading on your page."</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="text-center mx-20 px-20">
+            <h1 class="text-5xl font-bold tracking-wide">Trusted by over 800+ companies</h1>
+            <div class="flex">
+                <img class="py-8 px-5" src="images/company/company-1.png" alt="">
+                <img class="py-8 px-5" src="images/company/company-2.png" alt="">
+                <img class="py-8 px-5" src="images/company/company-3.png" alt="">
+                <img class="py-8 px-5" src="images/company/company-4.png" alt="">
+                <img class="py-8 px-5" src="images/company/company-5.png" alt="">
+                <img class="py-8 px-5" src="images/company/company-6.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 </body>
+<footer class="bg-black text-center py-12">
+    <h1 class="text-3xl font-bold text-rose-500">Tech Varsa</h1>
+    <div class="text-white">
+        <p>31 Road ,4th Floor,Bangshi Bazar</p>
+        <p>Mirpur, Dhaka</p>
+        <p>Privecy Policy | Terms of use</p>
+        <div><i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
+</footer>
 
 </html>
